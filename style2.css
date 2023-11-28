@@ -1,0 +1,129 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #151719; /* Background color set to charcoal color */
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5); /* Revert the background color to the original color (black with transparency) */
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6); /* Revert the box shadow to the original color (black with transparency) */
+  border-radius: 10px;
+  color: #fff; /* Text color set to white */
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff; /* Set the title color to white */
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff; /* Set the input text color to white */
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+  top: -25px; /* Move the input field up further */
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 14px; /* Slightly reduce the font size for labels */
+  color: #fff; /* Set the label text color to white */
+  pointer-events: none;
+  transition: 0.5s;
+  top: -18px; /* Move the label up further */
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #79bca0; /* Set the button text color to forest pine green */
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+  
+}
+
+.login-box a:hover {
+  background: #79bca0;
+  color: #fff; /* Set the button text color to white on hover */
+  border-radius: 5px;
+  box-shadow: 0 0 5px #79bca0, 0 0 25px #79bca0, 0 0 50px #79bca0, 0 0 100px #79bca0;
+}
+
+.submit{
+  position: relative;
+  display: inline-block;
+  cursor:pointer;
+  padding: 10px 20px;
+  border: none;
+  color:#79bca0;
+  background-color: rgba(10, 10, 10, 0.5);
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+  
+}
+
+.submit:hover{
+  background: #79bca0;
+  color: #fff; /* Set the button text color to white on hover */
+  border-radius: 5px;
+  box-shadow: 0 0 5px #79bca0, 0 0 25px #79bca0, 0 0 50px #79bca0, 0 0 100px #79bca0;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly; /* Adjust this based on your preference */
+}
+
+/* Add styling for the signup link */
+.signup-link {
+  text-decoration: none; /* Remove underline */
+  color: #2196F3; /* Blue color, change as needed */
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+  /* Adjust the top and right values to position the image as desired */
+  width: 45px; /* Adjust the max-width as needed */
+}
