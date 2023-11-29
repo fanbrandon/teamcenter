@@ -7,7 +7,7 @@ include("functions.php");
 $error_message = ""; // Initialize an empty error message
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    // something was posted
+    //something was posted
     $user_name = $_POST['user_name'];
     $password = $_POST['password'];
     $email = $_POST['email'];
@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
     if (!empty($user_name) && !empty($password) && !is_numeric($user_name)) {
 
-        // store in the database
+        //store in the database
         $user_id = random_num(5);
         $hashed_password = password_hash($password, PASSWORD_DEFAULT); // Hash the password
         $query = "INSERT into users (user_id, user_name, password, email, firstname, lastname, user_type) VALUES ('$user_id', '$user_name', '$hashed_password', '$email', '$firstname', '$lastname', '$user_type')";
@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             header("Location: adminLogin.php");
             exit();
         } else {
-            // Handle other user_types as needed
+            //Handle other user_types as needed
         }
     } else {
         $error_message = "Please fill out all forms.";
