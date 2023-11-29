@@ -18,15 +18,15 @@
 .comment {
   margin-bottom: 20px; /* Adjust as needed for spacing between comments */
   padding: 10px; /* Add padding for better appearance */
-  border: none; /* Add a border for separation */
+  border: 2px solid gray; /* Add a border for separation */
   border-radius: 5px; /* Add rounded corners */
-  background-color: black;
+  ;
   width: 860px;
   padding-left: 15px;
 }
 
 .comment h4 {
-  color: White; /* Change the color of the name */
+  color: #C5B682; /* Change the color of the name */
   font-size: 18px; /* Adjust the font size of the name */
   margin-bottom: 5px; /* Add spacing between name and date */
 }
