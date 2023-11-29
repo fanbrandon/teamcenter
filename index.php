@@ -17,7 +17,7 @@
         <img src="images/Primary_Vertical_1_Color_Green.png" frameborder="0" />
       </div>
       <div class="waviy">
-        <!-- Use the same class for all text elements, and set a different custom attribute for animation delay Sukhjot Singh was here-->
+        <!--Use the same class for all text elements, and set a different custom attribute for animation delay Sukhjot Singh was here-->
         <div>
           <span
             class="text"
