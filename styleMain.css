@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa Slab One');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@keyframes fade-up{
+    0%{
+        opacity:0;
+        transform: translateY(-30px) scale(0.9)
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+body {
+
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-color: #151719;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    animation: fade-up 0.5s;
+}
+
+
+
+body .is-loading{
+    opacity:0;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 0;
+    animation: fade-up 0.5s;
+}
+
+
+.content {
+    flex-grow: 1;
+    padding: 15px;
+}
+
+
+
+.myEventsContent {
+    padding: 0px ; /* Adjust the padding on the left and right sides */
+    color: white; /* Adjust the color of the additional text */
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 20px;
+    width: 875px;
+    
+}
+
+
+.line{
+    margin-bottom: 10px;
+    background-color: white;
+    height: 2px;
+}
+
+.h2 {
+    font-size: 30px;
+    color: white;
+}
+
+.logout a {
+    background-color: #01796F;
+    border: none;
+    color: white;
+    padding: 7px 20px;
+    text-align: start;
+    text-decoration: none;
+    display: inline-block;
+    margin: 48px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logout a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+header img {
+    max-width: 100px; /* Adjust the maximum width of the image */
+    margin-right: 10px; /* Adjust the margin between the image and the text */
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-underline-offset: 1px;
+    padding: 0 12px; /* Adjust the padding between the text links */
+    position: relative;
+    transition: color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+
+nav a:hover {
+    color: #01796F; /* Adjust the color on hover */
+    transform: translateY(-3px);
+}
+
+h1 {
+    font-size: 30px;
+    color:#C5B682
+}
+
+
+
+form div {
+    margin-bottom: 15px; /* Adjust as needed to control the space between elements */
+}
+
+label {
+    display: block; /* Ensures labels are on a new line */
+    margin-bottom: 5px; /* Adjust as needed for spacing between label and input */
+}
+
+form div {
+    margin-bottom: 15px; /* Adjust as needed to control the space between elements */
+}
+
+label {
+    display: block; /* Ensures labels are on a new line */
+    margin-bottom: 5px; /* Adjust as needed for spacing between label and input */
+    color: white; /* Change label text color */
+    font-size: 14px; /* Change label font size */
+    font-weight: bold; /* Change label font weight */
+}
+
+input,
+textarea {
+    width: 100%; /* Make inputs and textarea take the full width of their container */
+    padding: 8px; /* Add padding for better appearance */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+button.submit {
+    /* Add any styling you want for the submit button */
+    background-color: #01796F;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-button, .unregister-button, .add-event-button {
+    background-color: #01796F;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    margin-top: 10px;
+    text-align: start;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.register-button:hover{
+    background-color: white;
+    color: black;
+}
+
+.unregister-button:hover{
+    background-color: white;
+    color: black;
+}
+
+.add-event-button:hover{
+    background-color: white;
+    color: black;
+}
+
+.registered-text {
+    color: #C5B682;
+    font-weight: bold;
+}
+
+footer {
+    
+    color: #C5B682;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
