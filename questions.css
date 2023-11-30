@@ -36,6 +36,7 @@ body .is-loading{
     max-width: 1000px;
     margin: auto;
     margin-top: 0;
+    animation: fade-up 0.5s;
 }
 
 .content {
@@ -189,4 +190,8 @@ button.submit {
 .error-message{
     font-size: 20px;
     color: white;
+}
+
+header{
+    width: 1020px;
 }
