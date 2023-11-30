@@ -74,7 +74,7 @@ body .is-loading{
     background-color: #01796F;
     border: none;
     color: white;
-    padding: 7px 20px;
+    padding: 7px 25px;
     text-align: start;
     text-decoration: none;
     display: inline-block;
@@ -168,7 +168,7 @@ button.submit {
     cursor: pointer;
 }
 
-.register-button, .unregister-button, .add-event-button {
+.register-button, .unregister-button, .add-event-button, .delete-button {
     background-color: #01796F;
     border: none;
     color: white;
@@ -198,6 +198,13 @@ button.submit {
     color: black;
 }
 
+
+.delete-button:hover{
+    background-color: white;
+    color: black;
+}
+
+
 .registered-text {
     color: #C5B682;
     font-weight: bold;
@@ -211,4 +218,13 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.userList{
+    width: 900px;
+    font-size: 20px;
+}
+
+header{
+    width: 1000px;
 }
