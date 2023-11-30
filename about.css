@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa Slab One');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@keyframes fade-up{
+    0%{
+        opacity:0;
+        transform: translateY(-30px) scale(0.9)
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+
+body {
+
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-color: #151719;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+
+}
+
+body .is-loading{
+    opacity:0;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 0;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 15px;
+}
+
+
+
+
+.logout a {
+    background-color: #01796F;
+    border: none;
+    color: white;
+    padding: 7px 20px;
+    text-align: start;
+    text-decoration: none;
+    display: inline-block;
+    margin: 48px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logout a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+header img {
+    max-width: 100px; /* Adjust the maximum width of the image */
+    margin-right: 10px; /* Adjust the margin between the image and the text */
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-underline-offset: 1px;
+    padding: 0 12px; /* Adjust the padding between the text links */
+    position: relative;
+    transition: color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+
+nav a:hover {
+    color: #01796F; /* Adjust the color on hover */
+    transform: translateY(-3px);
+}
+
+.aboutcontent {
+    text-align: center;
+    width:875px;
+    margin: auto;
+}
+
+.title {
+    font-size: 3em;
+    margin-bottom: 1px;
+}
+.title2{
+    font-size: 4em;
+    margin-bottom: 0px;
+}
+
+.paragraph {
+    margin: 2em 3em;
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+}
+
+.leaders {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+.container {
+    animation: fade-up 0.5s;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Three columns */
+    grid-template-rows: repeat(3, auto); /* Two rows */
+    gap: 20px; /* Adjust the gap between boxes */
+    margin-left:30px;
+    
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    background-color: #151719;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 24rem; /* Adjust the width as needed */
+    height: auto; /* Let the height adjust based on content */
+    border: 1px solid #000; /* Optional: add a border for visibility */
+    margin-right: 10px; /* Optional: add margin between boxes */
+    text-align: center; /* Center text in the box */
+    transition: all .2s ease-in-out; 
+}
+
+.box2 {
+    width: 50%; /* Adjust the width as needed */
+    height: auto; /* Let the height adjust based on content */
+    margin-left: 10px;
+    margin-right: 10px; /* Optional: add margin between boxes */
+    text-align: center; /* Center text in the box */
+    margin-bottom: 50px;
+}
+
+.box:hover{
+    transform: scale(1.1);
+    box-shadow: #01796F 0px 10px 17px;
+}
+
+
+.bulletlist{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    font-size: large;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.bulletlist2{
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    font-size: large;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.leaders-bottom-text{
+    font-size: small;
+    margin: 2rem 1rem;
+}
+
+.container2{
+    padding: 2rem;
+
+}
+.slider-wrapper{
+    position:relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+.slider{
+    display: flex;
+    aspect-ratio: 16 / 9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsl(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+
+}
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+.slider-nav a :hover{
+    opacity: 1;
+    
+}
+
+.title2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
