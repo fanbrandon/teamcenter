@@ -8,10 +8,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $event_date = mysqli_real_escape_string($con, $data['event_date']);
     $event_location = mysqli_real_escape_string($con, $data['event_location']);
     $event_description = mysqli_real_escape_string($con, $data['event_description']);
+    $event_task = mysqli_real_escape_string($con, $data['event_task']);
 
     // Insert into the 'events' table
-    $insert_query = "INSERT INTO events (event_name, event_date, event_location, event_description) 
-                     VALUES ('$event_name', '$event_date', '$event_location', '$event_description')";
+    $insert_query = "INSERT INTO events (event_name, event_date, event_location, event_description, event_task) 
+                     VALUES ('$event_name', '$event_date', '$event_location', '$event_description', '$event_task')";
 
     if (mysqli_query($con, $insert_query)) {
         echo json_encode(array('success' => true, 'message' => 'Event added successfully!'));

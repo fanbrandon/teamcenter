@@ -55,6 +55,9 @@ $result = mysqli_query($con, $query);
                 <label for="event_description">Event Description:</label>
                 <textarea id="event_description" name="event_description" required></textarea>
 
+                <label for="event_task">Event Tasks:</label>
+                <textarea id="event_task" name="event_task" required></textarea>
+
                 <input type="submit" value="Add Event">
             </form>
         </div>
@@ -68,6 +71,7 @@ $result = mysqli_query($con, $query);
                 echo "<p><strong><span style=\"color: #C5B682;\">Event Date:</span></strong> <span style=\"color: white;\">{$row['event_date']}</span></p>";
                 echo "<p><strong><span style=\"color: #C5B682;\">Event Location:</span></strong> <span style=\"color: white;\">{$row['event_location']}</span></p>";
                 echo "<p><strong><span style=\"color: #C5B682;\">Event Description:</span></strong> <span style=\"color: white;\">{$row['event_description']}</span></p>";
+                echo "<p><strong><span style=\"color: #C5B682;\">Event Tasks:</span></strong> <span style=\"color: white;\">{$row['event_task']}</span></p>";
                 echo "<button class='delete-button' onclick='deleteEvent(" . $row['event_id'] . ")'>Delete Event</button>";
                 echo "</div><br>";
                 echo "<div class='line'></div>";
@@ -125,7 +129,8 @@ $result = mysqli_query($con, $query);
         event_name: document.getElementById('event_name').value,
         event_date: document.getElementById('event_date').value,
         event_location: document.getElementById('event_location').value,
-        event_description: document.getElementById('event_description').value
+        event_description: document.getElementById('event_description').value,
+        event_task:document.getElementById('event_task').value
     };
 
     // Send AJAX request

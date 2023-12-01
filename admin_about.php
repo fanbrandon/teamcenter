@@ -29,7 +29,7 @@ $user_data = check_login($con);
                     <a href="admin_about.php">About</a>
                     <a href="admin_events.php">Events</a>
                     <a href="admin_questions.php">Questions</a>
-                    <a href="volunteers.php">Volunteers</a>
+                    <a href="volunteers.php">Volunteer</a>
                 </nav>
                 <div class="logout"><a href="index.php">Log Out</a></div>
             </header>

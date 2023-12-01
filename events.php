@@ -44,6 +44,7 @@ $result = mysqli_query($con, $query);
                 echo "<p><strong><span style=\"color: #C5B682;\">Event Date:</span></strong> <span style=\"color: white;\">{$row['event_date']}</span></p>";
                 echo "<p><strong><span style=\"color: #C5B682;\">Event Location:</span></strong> <span style=\"color: white;\">{$row['event_location']}</span></p>";
                 echo "<p><strong><span style=\"color: #C5B682;\">Event Description:</span></strong> <span style=\"color: white;\">{$row['event_description']}</span></p>";
+                echo "<p><strong><span style=\"color: #C5B682;\">Event Tasks:</span></strong> <span style=\"color: white;\">{$row['event_task']}</span></p>";
                 // Use the user_id from the session to check if the user is registered for the event
                 $isRegistered = isUserRegistered($con, $_SESSION['user_id'], $row['event_id']);
                 if (!$isRegistered) {
