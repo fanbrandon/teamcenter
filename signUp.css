@@ -21,7 +21,7 @@ body {
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     color: #fff;
-    text-align: center; /*Center text in the login box */
+    text-align: center; /* Center text in the login box */
 }
 
 .login-box h2 {
@@ -32,7 +32,7 @@ body {
 .user-box {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px; /*Adjust the margin to create space between fields */
+    margin-bottom: 20px; /* Adjust the margin to create space between fields */
 }
 
 .user-box input {
